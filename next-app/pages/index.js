@@ -8,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Next App</title>
         <link rel="icon" href="" />
+        
       </Head>
     </div>
   )
