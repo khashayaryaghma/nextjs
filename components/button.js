@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Buttoon from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
-    button:{
+    root:{
         
     }
   }));

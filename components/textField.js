@@ -1,19 +1,17 @@
 import { TextField } from "@material-ui/core"
-import { useState } from "react";
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-  input:{
+  root:{
     width:"23rem"
   }
 }));
 
-function TextInput({label}) {
-  const [task, setTask] = useState({text:""});
-  const { input } = useStyles();
+function TextInput({label ,onChange, value}) {
+  const { root } = useStyles();
 
   return (
-    <TextField variant="filled" size="small" className={input} label={label} onChange={(e)=>{setTask({text:e.target.value})}} value={task.text}/>
+    <TextField variant="filled" size="small" className={root} label={label} onChange={onChange} value={value}/>
   )
 }
 

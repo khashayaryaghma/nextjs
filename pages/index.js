@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Button from '../components/button'
-import TextInput from '../components/textField'
+import Form from '../components/form'
+
 
 
 export default function Home() {
@@ -9,11 +9,7 @@ export default function Home() {
       <Head>
         <title>To-do List</title>
       </Head>
-
-      <h1>Home Page</h1>
-      
-      <TextInput label="Enter your task"/>
-      <Button>click me</Button>
+      <Form />
     </>
   )
 }
